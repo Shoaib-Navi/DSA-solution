@@ -1,11 +1,17 @@
-//3170. Lexicographically Minimum String After Removing Stars
+#include <iostream>
+#include <string>
+#include <vector>
+#include <queue>
 
+using namespace std;
+
+// 3170. Lexicographically Minimum String After Removing Stars
 class Solution {
 public:
     string clearStars(string s) {
         priority_queue<pair<char, int>, vector<pair<char, int>>, greater<pair<char, int>>> pq;
         vector<bool> removed(s.size(), false);
-        
+
         for (int i = 0; i < s.size(); ++i) {
             if (s[i] != '*') {
                 pq.push({s[i], -i});
@@ -19,14 +25,26 @@ public:
                 }
             }
         }
-        
+
         string result;
         for (int i = 0; i < s.size(); ++i) {
             if (!removed[i] && s[i] != '*') {
                 result += s[i];
             }
         }
-        
+
         return result;
     }
 };
+
+int main() {
+    Solution sol;
+
+    string input = "aaba*";
+    string output = sol.clearStars(input);
+
+    cout << "Input: " << input << endl;
+    cout << "Output: " << output << endl;
+
+    return 0;
+}

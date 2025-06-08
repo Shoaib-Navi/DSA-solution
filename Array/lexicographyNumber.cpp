@@ -29,3 +29,18 @@ public:
         return result;
     }
 };
+
+
+int main() {
+    Solution solution;
+    int n = 13;
+    vector<int> result = solution.lexicalOrder(n);
+    
+    cout << "Lexicographical order of numbers from 1 to " << n << ":" << endl;
+    for (int num : result) {
+        cout << num << " ";
+    }
+    cout << endl;
+    
+    return 0;
+}

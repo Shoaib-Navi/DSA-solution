@@ -1,5 +1,12 @@
 // 386. Lexicographical Numbers
 
+#include <iostream>
+#include <string>
+#include <vector>
+#include <queue>
+
+using namespace std;
+
 class Solution {
 public:
     vector<int> lexicalOrder(int n) {

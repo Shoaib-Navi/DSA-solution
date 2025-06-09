@@ -27,3 +27,12 @@ private:
         return steps;
     }
 };
+
+
+int main() {
+    Solution sol;
+    int n = 13;
+    int k = 2;
+    std::cout << "The " << k << "-th smallest number in lexicographical order up to " << n << " is: " << sol.findKthNumber(n, k) << std::endl;
+    return 0;
+}

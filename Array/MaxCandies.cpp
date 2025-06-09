@@ -48,3 +48,29 @@ public:
         return total;
     }
 };
+
+int main() {
+    Solution sol;
+    
+    // Sample input 1
+    vector<int> status = {1, 0, 1, 0};
+    vector<int> candies = {7, 5, 4, 100};
+    vector<vector<int>> keys = {{}, {}, {1}, {}};
+    vector<vector<int>> containedBoxes = {{1, 2}, {3}, {}, {}};
+    vector<int> initialBoxes = {0};
+    
+    int result = sol.maxCandies(status, candies, keys, containedBoxes, initialBoxes);
+    cout << "Maximum candies collected: " << result << endl;
+    
+    // Sample input 2
+    status = {1, 0, 0, 0, 0, 0};
+    candies = {1, 1, 1, 1, 1, 1};
+    keys = {{1, 2, 3, 4, 5}, {}, {}, {}, {}, {}};
+    containedBoxes = {{1, 2, 3, 4, 5}, {}, {}, {}, {}, {}};
+    initialBoxes = {0};
+    
+    result = sol.maxCandies(status, candies, keys, containedBoxes, initialBoxes);
+    cout << "Maximum candies collected: " << result << endl;
+    
+    return 0;
+}

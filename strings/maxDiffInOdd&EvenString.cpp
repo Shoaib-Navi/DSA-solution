@@ -25,3 +25,17 @@ public:
         return maxOdd - minEven;
     }
 };
+
+
+int main() {
+    string s;
+    cout << "Enter the string: ";
+    cin >> s;
+
+    Solution sol;
+    int result = sol.maxDifference(s);
+
+    cout << "Maximum Difference: " << result << endl;
+
+    return 0;
+}

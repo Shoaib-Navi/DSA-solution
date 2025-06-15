@@ -29,3 +29,14 @@ public:
         return stoi(maxStr) - stoi(minStr);
     }
 };
+
+
+int main() {
+    Solution solution;
+    int num;
+    cout << "Enter the number: ";
+    cin >> num;
+    int result = solution.minMaxDifference(num);
+    cout << "Maximum difference: " << result << endl;
+    return 0;
+}

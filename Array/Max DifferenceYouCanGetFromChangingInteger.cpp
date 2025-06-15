@@ -41,3 +41,12 @@ public:
         return maxNum - minNum;
     }
 };
+
+
+int main() {
+    Solution solution;
+    int num;
+    cin >> num;
+    cout << solution.minMaxDifference(num) << endl;
+    return 0;
+}

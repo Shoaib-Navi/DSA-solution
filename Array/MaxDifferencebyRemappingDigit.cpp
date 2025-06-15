@@ -1,5 +1,10 @@
 // Maximum Difference by Remapping a Digit
 
+
+#include <iostream>
+#include <string>
+using namespace std;
+
 class Solution {
 public:
     int minMaxDifference(int num) {

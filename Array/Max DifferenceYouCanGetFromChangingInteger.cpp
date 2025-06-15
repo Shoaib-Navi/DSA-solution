@@ -1,5 +1,10 @@
 // 1432. Max Difference You Can Get From Changing an Integer
 
+
+#include <iostream>
+#include <string>
+using namespace std;
+
 class Solution {
 public:
     int maxDiff(int num) {

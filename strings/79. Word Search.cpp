@@ -33,8 +33,7 @@ public:
             for(int j = 0; j < board[i].size(); j++) 
 				//check if the characters are equal then call DFS
                 if(board[i][j] == word[0] && DFS(board, word, i, j, 0))
-                    return true;
-        
+                    return true;        
         return false;
     }
 };
